@@ -19,6 +19,7 @@ if($command -eq "start")
     if($errors.Count -gt 0)
     {
       Write-Host "[$($timestamp)] CrashPlanService could not be started.  Current status is $((Get-Service CrashPlanService).Status)" -ForegroundColor Red
+      Write-Host $errors -ForegroundColor Cyan
     }
     else
     {
@@ -41,10 +42,11 @@ elseif($command -eq "stop")
     if($errors.Count -gt 0)
     {
       Write-Host "[$($timestamp)] CrashPlanService could not be stopped. Current status is $((Get-Service CrashPlanService).Status)" -ForegroundColor Red
+      Write-Host $errors -ForegroundColor Cyan
     }
     else
     {
-      Write-Host "[$($timestamp)] CrashPlanService stopped" -ForegroundColor Yellow
+      Write-Host "[$($timestamp)] CrashPlanService stopped" -ForegroundColor Blue
     }
   }
 }
