@@ -7,4 +7,4 @@
  
  Use with a scheduled task to start/stop CrashPlan service (because it chews up RAM).
  
- `powershell "path\to\crashplan.ps1" [start|stop]`
+ `powershell "path\to\crashplan.ps1" [start|stop] -WindowStyle Hidden` 
