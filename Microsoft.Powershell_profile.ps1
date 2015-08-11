@@ -1,7 +1,6 @@
 # "Aliases" to other functions
 function gms {
-	param
-	(
+	param (
 		[Parameter(Mandatory=$true, ValueFromPipeline=$true, ValueFromPipelineByPropertyName=$true)]
 		$o
 	)
